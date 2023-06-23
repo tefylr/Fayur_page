@@ -3,8 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 
-  outline: var(--raya);
+  /* outline: var(--raya); */
   font-weight: 200;
+  font-family: Arima Madurai;
 }
 
 html {
@@ -207,7 +208,7 @@ header .marco .marco_interno .cuadro a {
 }
 
 section {
-  padding: 10% 0px;
+  /* padding: 10% 0px; */
 }
 .margin-horizontal {
   margin: 0% 12%;
@@ -306,11 +307,29 @@ footer p {
   background-color: var(--verde);
   padding: 0% 10%;
 }
-#equipo {
-  /* background-image: url("../img/collage_4.jpeg"); */
-  /* background-size: cover; */
-  /* background-repeat: no-repeat; */
+.equipo {
+  /* background-image: url("../img/equipo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
   position: relative;
   display: inline-block;
   text-align: center;
+  width: 100%;
+}
+
+.img-equipo {
+  width: inherit;
+}
+.equipo-texto {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  color: var(--verde);
+  font-size: 95px;
+  font-weight: bold;
+  width: 100%;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
