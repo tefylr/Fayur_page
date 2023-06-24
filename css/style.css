@@ -378,6 +378,10 @@ margin-top: 3%;
   padding: 7% 0;
   /* opacity: 0.2; */
 }
+.bckgnd-form-pqr h2{
+  padding: 2% 0%;
+
+}
 .form-pqr-padding{
   padding: 4% 6%;
   background-color: var(--gris);
