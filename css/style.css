@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/arima-madurai');
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 
   /* outline: var(--raya); */
   font-weight: 200;
-  font-family: Arima Madurai;
+  font-family: 'Arima Madurai', sans-serif;
 }
 
 html {
@@ -163,14 +164,16 @@ header .marco .marco_interno .cuadro a {
 
 .caja-h1 {
   text-align: center;
-  background-color: var(--verde);
+  /* background-color: var(--verde); */
   width: fit-content;
-  border: 3px solid var(--gris);
+  /* border: 3px solid var(--gris); */
 }
 .h1-principal {
   color: var(--blanco);
   background-color: var(--verde);
+  border: 3px solid var(--gris);
   width: fit-content;
+  margin-top: revert;
 }
 .img-sol {
   height: inherit;
@@ -186,6 +189,10 @@ header .marco .marco_interno .cuadro a {
 .border-round {
   padding: 15%;
   border-radius: 110px;
+}
+
+.row-margin-bottom{
+  margin-bottom: 8%;
 }
 
 .bckgnd-form {
@@ -237,6 +244,7 @@ form h2 {
 footer {
   background-color: var(--salmon);
   color: var(--blanco);
+ padding-top: 1%;
 }
 
 footer h3 {
@@ -253,12 +261,17 @@ footer p {
 
 /**------------------------------------page-turismo----------------------------------*/
 
+#section-tierra{
+  margin-top: 8%;
+}
 #section-aereo {
   background-color: var(--verde);
+  padding-bottom: 6%;
 }
 
 #section-aereo h1 {
   color: var(--blanco);
+  margin-top: revert;
 }
 
 .p-col-4 {
@@ -268,8 +281,9 @@ footer p {
 /*-------------------------------page-pasadias---------------------------------------*/
 
 #pasadias_destino {
-  background-color: var(--gris);
-  color: var(--salmon);
+  background-color: var(--salmon);
+  color: var(--blanco);
+  padding-top: 6%;
 }
 .img-pasadias-dest {
   background-color: var(--salmon);
@@ -293,15 +307,22 @@ footer p {
 }
 
 .row-margin {
-  margin: 10% 0%;
+  margin: 5% 0%;
 }
 .pasadias-font {
   font-size: 30px;
 }
 
+.row-margin-top{
+  margin-top: 5%;
+}
+
 /**--------------------------page nosotros------------------------*/
 .mv-padding {
   padding: 5% 10%;
+}
+.img-margin-top{
+margin-top: 3%;
 }
 #historia {
   background-color: var(--verde);
@@ -360,4 +381,11 @@ footer p {
 .form-pqr-padding{
   padding: 4% 6%;
   background-color: var(--gris);
+}
+.p-red{
+  color: var(--salmon);
+  font-size: 1rem;
+}
+.img-shadow{
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
 }
