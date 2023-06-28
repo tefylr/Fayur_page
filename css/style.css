@@ -1,12 +1,12 @@
-@import url('https://fonts.cdnfonts.com/css/arima-madurai');
+@import url("https://fonts.cdnfonts.com/css/arima-madurai");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  /* outline: var(--raya); */
+  outline: var(--raya);
   font-weight: 200;
-  font-family: 'Arima Madurai', sans-serif;
+  font-family: "Arima Madurai", sans-serif;
 }
 
 html {
@@ -19,377 +19,797 @@ html {
   --salmon: #ec6568;
   --verde: #05adbf;
   --blanco_sombra: rgb(212, 211, 211);
-  --gris: #D9D9D9;
+  --gris: #d9d9d9;
   --raya: 3px solid #ff0000;
 }
 
 body {
   background-color: var(--blanco);
 }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
 
-nav {
-  background-color: var(--blanco);
-  color: var(--blanco);
+@media (min-width: 1281px) {
+  nav {
+    background-color: var(--blanco);
+    color: var(--blanco);
+  }
+
+  nav.img {
+    width: 100%;
+    height: 20px;
+  }
+
+  .row-width {
+    width: 100%;
+  }
+  /*---------------------------------------------header--------------------------------------------*/
+
+  header {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 1px;
+    border-radius: 0px;
+    position: relative;
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  header div.img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .justify-content-center {
+    align-items: center;
+    height: 60px;
+  }
+
+  header .navegacion {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 131px;
+    padding-top: 10px;
+    height: 58px;
+    margin-bottom: 10px;
+    background-color: var(--verde);
+    text-transform: uppercase;
+  }
+
+  a.nav-link {
+    color: var(--blanco);
+  }
+
+  .r-texto {
+    overflow: auto;
+  }
+  .carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 48px;
+    object-fit: cover;
+    z-index: -2px;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 0%;
+    list-style: none;
+
+    z-index: 2px;
+  }
+
+  #carousel-promos {
+    margin-top: 0%;
+    background-color: var(--salmon);
+    color: var(--blanco);
+  }
+
+  .m-texto {
+    margin-top: 10px;
+  }
+  header .marco {
+    width: 100%;
+    height: 70vh;
+    padding-left: 50px;
+  }
+  header .marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header .marco .carousel-inner .marco_interno {
+    position: relative;
+  }
+
+  header .marco .marco_interno .cuadro {
+    position: absolute;
+    top: -40vh;
+    left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100px;
+  }
+  header .marco .marco_interno .cuadro p {
+    width: 85%;
+    color: var(--salmon);
+    font-size: 1.5em;
+    text-align: left;
+    margin: auto;
+    align-items: center;
+  }
+  header .marco .marco_interno .cuadro a {
+    padding: 10px 30px;
+    text-align: center;
+    margin-left: 100%;
+    transform: translateX(-100%);
+
+    background-color: var(--azul_claro);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /*---------------------------------------------section--------------------------------------------*/
+
+  .caja-h1 {
+    text-align: center;
+    /* background-color: var(--verde); */
+    width: fit-content;
+    /* border: 3px solid var(--gris); */
+  }
+  .h1-principal {
+    color: var(--blanco);
+    background-color: var(--verde);
+    border: 3px solid var(--gris);
+    width: fit-content;
+    margin-top: revert;
+  }
+  .img-sol {
+    height: inherit;
+    width: auto;
+  }
+
+  .img-pagos {
+    /* height: 20%; */
+    margin: auto;
+    display: block;
+  }
+
+  .border-round {
+    padding: 15%;
+    border-radius: 110px;
+  }
+
+  .row-margin-bottom {
+    margin-bottom: 8%;
+  }
+
+  .bckgnd-form {
+    background-image: url("../img/img-footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  .border-form {
+    border-radius: 3rem;
+  }
+
+  .button-width-content {
+    width: fit-content;
+    color: #fff;
+    background-color: #000000;
+    font-size: 32px;
+    padding: 4px 12px;
+  }
+
+  section {
+    /* padding: 10% 0px; */
+  }
+  .margin-horizontal {
+    margin: 0% 12%;
+  }
+  .form-padding {
+    padding: 0% 3%;
+  }
+  .form-label {
+    padding: 1% 3%;
+    font-weight: bold;
+  }
+  .form-input-br {
+    border-radius: 3rem;
+  }
+  form h2 {
+    padding: 10% 0%;
+  }
+
+  .bckgnd-form p {
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 0%;
+  }
+  /*---------------------------------------------footer--------------------------------------------*/
+
+  footer {
+    background-color: var(--salmon);
+    color: var(--blanco);
+    padding-top: 1%;
+  }
+
+  footer h3 {
+    font-size: 24px;
+  }
+
+  footer p {
+    padding-right: 50px;
+  }
+  .icono-footer {
+    height: 60px;
+    margin: 3%;
+  }
+
+  /**------------------------------------page-turismo----------------------------------*/
+
+  #section-tierra {
+    margin-top: 8%;
+  }
+  #section-aereo {
+    background-color: var(--verde);
+    padding-bottom: 6%;
+  }
+
+  #section-aereo h1 {
+    color: var(--blanco);
+    margin-top: revert;
+  }
+
+  .p-col-4 {
+    font-size: 35px;
+  }
+
+  /*-------------------------------page-pasadias---------------------------------------*/
+
+  #pasadias_destino {
+    background-color: var(--salmon);
+    color: var(--blanco);
+    padding-top: 6%;
+  }
+  .img-pasadias-dest {
+    background-color: var(--salmon);
+  }
+  .bckgnd-pasadia-form {
+    background-color: var(--gris);
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  #pasadias_form form {
+    background-color: var(--gris);
+  }
+
+  #pasadias_form h1 {
+    color: var(--verde);
+    margin-bottom: 30%;
+  }
+
+  .form-pasadias-padding {
+    padding: 4% 6%;
+  }
+
+  .row-margin {
+    margin: 5% 0%;
+  }
+  .pasadias-font {
+    font-size: 30px;
+  }
+
+  .row-margin-top {
+    margin-top: 5%;
+  }
+
+  /**--------------------------page nosotros------------------------*/
+  .mv-padding {
+    padding: 5% 10%;
+  }
+  .img-margin-top {
+    margin-top: 3%;
+  }
+  #historia {
+    background-color: var(--verde);
+    padding: 0% 10%;
+  }
+  .equipo {
+    /* background-image: url("../img/equipo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .img-equipo {
+    width: inherit;
+  }
+  .equipo-texto {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    color: var(--verde);
+    font-size: 95px;
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  }
+
+  /**-------------------------------page contacto---------------------------------------*/
+  .bckgnd-form-contacto {
+    background-image: url("../img/img_slider_2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+
+  #contacto-form h4 {
+    margin: 10% 0%;
+  }
+
+  .form-contacto-padding {
+    padding: 4% 6%;
+  }
+  .bckgnd-form-pqr {
+    background-color: var(--verde);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  .bckgnd-form-pqr h2 {
+    padding: 2% 0%;
+  }
+  .form-pqr-padding {
+    padding: 4% 6%;
+    background-color: var(--gris);
+  }
+  .p-red {
+    color: var(--salmon);
+    font-size: 1rem;
+  }
+  .img-shadow {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  }
 }
 
-nav.img {
-  width: 100%;
-  height: 20px;
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  nav {
+    background-color: var(--blanco);
+    color: var(--blanco);
+  }
+
+  nav.img {
+    width: 100%;
+    height: 20px;
+  }
+
+  .row-width {
+    width: 100%;
+  }
+  /*---------------------------------------------header--------------------------------------------*/
+
+  header {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 1px;
+    border-radius: 0px;
+    position: relative;
+
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  header div.img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-align: center;
+  }
+
+  .justify-content-center {
+    align-items: center;
+    height: 60px;
+  }
+
+  header .navegacion {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 131px;
+    padding-top: 10px;
+    height: 58px;
+    margin-bottom: 10px;
+    background-color: var(--verde);
+    text-transform: uppercase;
+  }
+
+  a.nav-link {
+    color: var(--blanco);
+  }
+
+  .r-texto {
+    overflow: auto;
+  }
+  .carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 48px;
+    object-fit: cover;
+    z-index: -2px;
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 0%;
+    list-style: none;
+
+    z-index: 2px;
+  }
+
+  #carousel-promos {
+    margin-top: 0%;
+    background-color: var(--salmon);
+    color: var(--blanco);
+  }
+
+  .m-texto {
+    margin-top: 10px;
+  }
+  header .marco {
+    width: 100%;
+    height: 70vh;
+    padding-left: 50px;
+  }
+  header .marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  header .marco .carousel-inner .marco_interno {
+    position: relative;
+  }
+
+  header .marco .marco_interno .cuadro {
+    position: absolute;
+    top: -40vh;
+    left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 100px;
+  }
+  header .marco .marco_interno .cuadro p {
+    width: 85%;
+    color: var(--salmon);
+    font-size: 1.5em;
+    text-align: left;
+    margin: auto;
+    align-items: center;
+  }
+  header .marco .marco_interno .cuadro a {
+    padding: 10px 30px;
+    text-align: center;
+    margin-left: 100%;
+    transform: translateX(-100%);
+
+    background-color: var(--azul_claro);
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /*---------------------------------------------section--------------------------------------------*/
+
+  .caja-h1 {
+    text-align: center;
+    /* background-color: var(--verde); */
+    width: fit-content;
+    /* border: 3px solid var(--gris); */
+  }
+  .h1-principal {
+    color: var(--blanco);
+    background-color: var(--verde);
+    border: 3px solid var(--gris);
+    width: fit-content;
+    margin-top: revert;
+  }
+  .img-sol {
+    height: inherit;
+    width: auto;
+  }
+
+  .img-pagos {
+    /* height: 20%; */
+    margin: auto;
+    display: block;
+  }
+
+  .border-round {
+    padding: 15%;
+    border-radius: 110px;
+  }
+
+  .row-margin-bottom {
+    margin-bottom: 8%;
+  }
+
+  .bckgnd-form {
+    background-image: url("../img/img-footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  .border-form {
+    border-radius: 3rem;
+  }
+
+  .button-width-content {
+    width: fit-content;
+    color: #fff;
+    background-color: #000000;
+    font-size: 32px;
+    padding: 4px 12px;
+  }
+
+  section {
+    /* padding: 10% 0px; */
+  }
+  .margin-horizontal {
+    margin: 0% 12%;
+  }
+  .form-padding {
+    padding: 0% 3%;
+  }
+  .form-label {
+    padding: 1% 3%;
+    font-weight: bold;
+  }
+  .form-input-br {
+    border-radius: 3rem;
+  }
+  form h2 {
+    padding: 10% 0%;
+  }
+
+  .bckgnd-form p {
+    font-weight: bold;
+    text-align: center;
+    padding: 5% 0%;
+  }
+  /*---------------------------------------------footer--------------------------------------------*/
+
+  footer {
+    background-color: var(--salmon);
+    color: var(--blanco);
+    padding-top: 1%;
+  }
+
+  footer h3 {
+    font-size: 24px;
+  }
+
+  footer p {
+    padding-right: 50px;
+  }
+  .icono-footer {
+    height: 60px;
+    margin: 3%;
+  }
+
+  /**------------------------------------page-turismo----------------------------------*/
+
+  #section-tierra {
+    margin-top: 8%;
+  }
+  #section-aereo {
+    background-color: var(--verde);
+    padding-bottom: 6%;
+  }
+
+  #section-aereo h1 {
+    color: var(--blanco);
+    margin-top: revert;
+  }
+
+  .p-col-4 {
+    font-size: 35px;
+  }
+
+  /*-------------------------------page-pasadias---------------------------------------*/
+
+  #pasadias_destino {
+    background-color: var(--salmon);
+    color: var(--blanco);
+    padding-top: 6%;
+  }
+  .img-pasadias-dest {
+    background-color: var(--salmon);
+  }
+  .bckgnd-pasadia-form {
+    background-color: var(--gris);
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  #pasadias_form form {
+    background-color: var(--gris);
+  }
+
+  #pasadias_form h1 {
+    color: var(--verde);
+    margin-bottom: 30%;
+  }
+
+  .form-pasadias-padding {
+    padding: 4% 6%;
+  }
+
+  .row-margin {
+    margin: 5% 0%;
+  }
+  .pasadias-font {
+    font-size: 30px;
+  }
+
+  .row-margin-top {
+    margin-top: 5%;
+  }
+
+  /**--------------------------page nosotros------------------------*/
+  .mv-padding {
+    padding: 5% 10%;
+  }
+  .img-margin-top {
+    margin-top: 3%;
+  }
+  #historia {
+    background-color: var(--verde);
+    padding: 0% 10%;
+  }
+  .equipo {
+    /* background-image: url("../img/equipo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+
+  .img-equipo {
+    width: inherit;
+  }
+  .equipo-texto {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    color: var(--verde);
+    font-size: 95px;
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+      -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  }
+
+  /**-------------------------------page contacto---------------------------------------*/
+  .bckgnd-form-contacto {
+    background-image: url("../img/img_slider_2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+
+  #contacto-form h4 {
+    margin: 10% 0%;
+  }
+
+  .form-contacto-padding {
+    padding: 4% 6%;
+  }
+  .bckgnd-form-pqr {
+    background-color: var(--verde);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 7% 0;
+    /* opacity: 0.2; */
+  }
+  .bckgnd-form-pqr h2 {
+    padding: 2% 0%;
+  }
+  .form-pqr-padding {
+    padding: 4% 6%;
+    background-color: var(--gris);
+  }
+  .p-red {
+    color: var(--salmon);
+    font-size: 1rem;
+  }
+  .img-shadow {
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7));
+  }
 }
 
-/*---------------------------------------------header--------------------------------------------*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
 
-header {
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 1px;
-  border-radius: 0px;
-  position: relative;
-
-  background-color: rgb(255, 255, 255);
-  text-align: center;
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
 }
 
-header div.img {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  text-align: center;
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS */
 }
 
-.justify-content-center {
-  align-items: center;
-  height: 60px;
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /* CSS */
 }
 
-header .navegacion {
-  position: absolute;
-  width: 100%;
-  left: 0px;
-  top: 131px;
-  padding-top: 10px;
-  height: 58px;
-  margin-bottom: 10px;
-  background-color: var(--verde);
-  text-transform: uppercase;
-}
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
-a.nav-link {
-  color: var(--blanco);
-}
-
-.r-texto {
-  overflow: auto;
-}
-.carousel {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin-top: 48px;
-  object-fit: cover;
-  z-index: -2px;
-}
-
-.carousel-indicators {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin-right: 15%;
-  margin-bottom: 1rem;
-  margin-left: 0%;
-  list-style: none;
-
-  z-index: 2px;
-}
-
-#carousel-promos {
-  margin-top: 0%;
-  background-color: var(--salmon);
-  color: var(--blanco);
-}
-
-.m-texto {
-  margin-top: 10px;
-}
-header .marco {
-  width: 100%;
-  height: 70vh;
-  padding-left: 50px;
-}
-header .marco img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-header .marco .carousel-inner .marco_interno {
-  position: relative;
-}
-
-header .marco .marco_interno .cuadro {
-  position: absolute;
-  top: -40vh;
-  left: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height: 100px;
-}
-header .marco .marco_interno .cuadro p {
-  width: 85%;
-  color: var(--salmon);
-  font-size: 1.5em;
-  text-align: left;
-  margin: auto;
-  align-items: center;
-}
-header .marco .marco_interno .cuadro a {
-  padding: 10px 30px;
-  text-align: center;
-  margin-left: 100%;
-  transform: translateX(-100%);
-
-  background-color: var(--azul_claro);
-  color: rgb(255, 0, 0);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/*---------------------------------------------section--------------------------------------------*/
-
-.caja-h1 {
-  text-align: center;
-  /* background-color: var(--verde); */
-  width: fit-content;
-  /* border: 3px solid var(--gris); */
-}
-.h1-principal {
-  color: var(--blanco);
-  background-color: var(--verde);
-  border: 3px solid var(--gris);
-  width: fit-content;
-  margin-top: revert;
-}
-.img-sol {
-  height: inherit;
-  width: auto;
-}
-
-.img-pagos {
-  /* height: 20%; */
-  margin: auto;
-  display: block;
-}
-
-.border-round {
-  padding: 15%;
-  border-radius: 110px;
-}
-
-.row-margin-bottom{
-  margin-bottom: 8%;
-}
-
-.bckgnd-form {
-  background-image: url("../img/img-footer.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 7% 0;
-  /* opacity: 0.2; */
-}
-.border-form {
-  border-radius: 3rem;
-}
-
-.button-width-content {
-  width: fit-content;
-  color: #fff;
-  background-color: #000000;
-  font-size: 32px;
-  padding: 4px 12px;
-}
-
-section {
-  /* padding: 10% 0px; */
-}
-.margin-horizontal {
-  margin: 0% 12%;
-}
-.form-padding {
-  padding: 0% 3%;
-}
-.form-label {
-  padding: 1% 3%;
-  font-weight: bold;
-}
-.form-input-br {
-  border-radius: 3rem;
-}
-form h2 {
-  padding: 10% 0%;
-}
-
-.bckgnd-form p {
-  font-weight: bold;
-  text-align: center;
-  padding: 5% 0%;
-}
-/*---------------------------------------------footer--------------------------------------------*/
-
-footer {
-  background-color: var(--salmon);
-  color: var(--blanco);
- padding-top: 1%;
-}
-
-footer h3 {
-  font-size: 24px;
-}
-
-footer p {
-  padding-right: 50px;
-}
-.icono-footer {
-  height: 60px;
-  margin: 3%;
-}
-
-/**------------------------------------page-turismo----------------------------------*/
-
-#section-tierra{
-  margin-top: 8%;
-}
-#section-aereo {
-  background-color: var(--verde);
-  padding-bottom: 6%;
-}
-
-#section-aereo h1 {
-  color: var(--blanco);
-  margin-top: revert;
-}
-
-.p-col-4 {
-  font-size: 35px;
-}
-
-/*-------------------------------page-pasadias---------------------------------------*/
-
-#pasadias_destino {
-  background-color: var(--salmon);
-  color: var(--blanco);
-  padding-top: 6%;
-}
-.img-pasadias-dest {
-  background-color: var(--salmon);
-}
-.bckgnd-pasadia-form {
-  background-color: var(--gris);
-  padding: 7% 0;
-  /* opacity: 0.2; */
-}
-#pasadias_form form {
-  background-color: var(--gris);
-}
-
-#pasadias_form h1 {
-  color: var(--verde);
-  margin-bottom: 30%;
-}
-
-.form-pasadias-padding {
-  padding: 4% 6%;
-}
-
-.row-margin {
-  margin: 5% 0%;
-}
-.pasadias-font {
-  font-size: 30px;
-}
-
-.row-margin-top{
-  margin-top: 5%;
-}
-
-/**--------------------------page nosotros------------------------*/
-.mv-padding {
-  padding: 5% 10%;
-}
-.img-margin-top{
-margin-top: 3%;
-}
-#historia {
-  background-color: var(--verde);
-  padding: 0% 10%;
-}
-.equipo {
-  /* background-image: url("../img/equipo.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-.img-equipo {
-  width: inherit;
-}
-.equipo-texto {
-  position: absolute;
-  top: 50%;
-  left: 54%;
-  transform: translate(-50%, -50%);
-  color: var(--verde);
-  font-size: 95px;
-  font-weight: bold;
-  width: 100%;
-  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
-    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-}
-
-/**-------------------------------page contacto---------------------------------------*/
-.bckgnd-form-contacto {
-  background-image: url("../img/img_slider_2.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 7% 0;
-  /* opacity: 0.2; */
-}
-
-#contacto-form h4{
-  margin: 10% 0%;
-}
-
-.form-contacto-padding{
-  padding: 4% 6%;
-}
-.bckgnd-form-pqr{
-  background-color: var(--verde);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 7% 0;
-  /* opacity: 0.2; */
-}
-.bckgnd-form-pqr h2{
-  padding: 2% 0%;
-
-}
-.form-pqr-padding{
-  padding: 4% 6%;
-  background-color: var(--gris);
-}
-.p-red{
-  color: var(--salmon);
-  font-size: 1rem;
-}
-.img-shadow{
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); 
+@media (min-width: 320px) and (max-width: 480px) {
+  /* CSS */
 }
