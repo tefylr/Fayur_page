@@ -231,7 +231,7 @@ header .marco .marco_interno .cuadro a {
 .button-width-content {
   width: fit-content;
   color: #fff;
-  background-color: #000000;
+  background-color: var(--salmon);
   font-size: 32px;
   padding: 4px 12px;
 }
@@ -352,6 +352,7 @@ footer p {
 #historia {
   background-color: var(--verde);
   padding: 0% 10%;
+  color: var(--blanco);
 }
 .equipo {
   /* background-image: url("../img/equipo.jpeg");
@@ -537,16 +538,14 @@ footer p {
   .img-pad-res {
     margin: 5% 0%;
   }
-  .row-width-title{
+  .row-width-title {
     font-size: 2rem;
   }
-  .p-pqrs{
+  .p-pqrs {
     font-size: 1rem;
   }
-  .
-  element.style {
-  }
-  .bckgnd-form-contacto{
+
+  .bckgnd-form-contacto {
     background-position: right;
   }
 }
