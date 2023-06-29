@@ -233,7 +233,7 @@ header .marco .marco_interno .cuadro a {
   color: #fff;
   background-color: var(--salmon);
   font-size: 32px;
-  padding: 4px 12px;
+  padding: 4px 22px;
   border: none;
 }
 
@@ -302,6 +302,9 @@ footer p {
 
 .p-col-4 {
   font-size: 35px;
+}
+.width-plan{
+  width: 30%;
 }
 
 /*-------------------------------page-pasadias---------------------------------------*/
@@ -384,6 +387,8 @@ footer p {
 .row-width-title {
   width: 90%;
 }
+
+
 
 /**-------------------------------page contacto---------------------------------------*/
 .bckgnd-form-contacto {
