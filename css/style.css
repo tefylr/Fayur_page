@@ -279,7 +279,10 @@ footer p {
   height: 60px;
   margin: 3%;
 }
-
+footer a {
+  color:var(--blanco);
+  text-decoration: none;
+}
 /**------------------------------------page-turismo----------------------------------*/
 
 #section-tierra {
