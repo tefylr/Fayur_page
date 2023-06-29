@@ -146,7 +146,8 @@
       </div>
       <div class="row justify-content-center row-margin-bottom">
         <h1 class="col-6 text-center">Vive el festival de verano</h1>
-        <button class="col-6 text-center rounded-pill button-width-content">
+        <button class="col-6 text-center rounded-pill button-width-content" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
           Separa tu cupo
         </button>
       </div>
@@ -177,7 +178,8 @@
   </section>
   <!---------------------------------------------section------------------------------------------------->
   <section class="bckgnd-form">
-    <form class="col-xs-10 col-md-6 col-lg-6 mx-auto text-center border border-dark border-2 border-form form-padding img-shadow">
+    <form
+      class="col-xs-10 col-md-6 col-lg-6 mx-auto text-center border border-dark border-2 border-form form-padding img-shadow">
       <h2>Información Cotización</h2>
       <div class="row text-start mb-3 justify-content-between">
         <label class="form-label col-4" for="">Nombres</label>
@@ -273,6 +275,66 @@
     </div>
   </footer>
   <!-- </div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Separa tu cupo</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form
+              class="col-xs-10 col-md-8 col-lg-8 mx-auto text-center border border-dark border-2 border-form form-padding img-shadow">
+              <h2>¡Viaja y disfruta!</h2>
+              <div class="row text-start mb-3 justify-content-between">
+                <label class="form-label col-4" for="">Nombres</label>
+                <input class="border border-dark border-0 form-input-br col-8" type="text" />
+              </div>
+              <div class="row text-start mb-3 justify-content-between">
+                <label class="form-label col-4" for="">Apellidos</label>
+                <input class="border border-dark border-0 form-input-br col-8" type="text" />
+              </div>
+              <div class="row text-start mb-3 justify-content-between">
+                <label class="form-label col-5" for="">Correo electrónico</label>
+                <input class="border border-dark border-0 form-input-br col-7" type="email" />
+              </div>
+              <div class="row text-start mb-3 justify-content-between">
+                <label class="form-label col-4" for="">Teléfono</label>
+                <input class="border border-dark border-0 form-input-br col-8" type="number" />
+              </div>
+              <div class="row">
+                <div class="col-6 mb-3">
+                  <div class="row justify-content-between">
+                    <label class="form-label col-6" for="">Adultos</label>
+                    <input class="border border-dark border-0 form-input-br col-6" type="number" />
+                  </div>
+                </div>
+                <div class="col-6 mb-3">
+                  <div class="row justify-content-between">
+                    <label class="form-label col-6" for="">Niños</label>
+                    <input class="border border-dark border-0 form-input-br col-6" type="number" />
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="row text-start mb-3 justify-content-between">
+                <label class="form-label col-5" for="">Cotización sobre</label>
+                <input class="border border-dark border-0 form-input-br col-7" type="text" />
+              </div>
+              <div class="row mb-3">
+                <label class="form-label col-12" for="">Comentarios</label>
+                <textarea class="border border-dark border-0 form-input-br col-12">
+  Haznos saber lo que piensas sobre nosotros...</textarea>
+              </div> -->
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
