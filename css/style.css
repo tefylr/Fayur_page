@@ -234,6 +234,7 @@ header .marco .marco_interno .cuadro a {
   background-color: var(--salmon);
   font-size: 32px;
   padding: 4px 12px;
+  border: none;
 }
 
 section {
