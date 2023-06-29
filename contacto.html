@@ -29,7 +29,7 @@
         <img class="img-header" src="img/logo_svg.svg" alt="" />
       </div>
       <!--------------------------------------------barra navegación-------------------------------------->
-      <nav class="navbar navbar-expand-lg navbar-verde">
+      <nav class="navbar navbar-expand-lg navbar-verde nav-shadow">
         <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <img class="img-nav" src="img/logo_svg.svg" alt="" />
@@ -77,13 +77,13 @@
       <div class="row text-center row-width">
         <p class="p-red">
           si requiere ser contactado por nuestro equipo de trabajo por favor
-          diligenciar el formulario y se le contactrá en el menor tiempo posible
+          diligenciar el formulario y se le contactará en el menor tiempo posible
         </p>
       </div>
       <form
-        class="col-4 mx-auto text-center border border-dark border-4 border-form form-padding img-shadow"
+        class="col-xs-10 col-md-6 col-lg-6 mx-auto text-center border border-dark border-4 border-form form-padding img-shadow"
       >
-        <h2>Petición, Queja o Reclamo</h2>
+        <h2></h2>
         <div class="row text-start mb-3 justify-content-between">
           <label class="form-label col-4" for="">Nombres</label>
           <input
@@ -159,18 +159,39 @@
         </p>
       </div>
       <form
-        class="col-4 mx-auto text-center border border-dark border-4 border-form form-pqr-padding img-shadow"
+        class="col-xs-10 col-md-6 col-lg-7 mx-auto text-center border border-dark border-4 border-form form-pqr-padding img-shadow"
       >
         <h2>Petición, Queja o Reclamo</h2>
         <div class="row text-start mb-3 justify-content-between">
-          <label class="form-label col-4" for="">Nombres</label>
+          <label class="form-label col-4" for="">Tipo de documento</label>
           <input
             class="border border-dark border-4 form-input-br col-8"
             type="text"
           />
         </div>
         <div class="row text-start mb-3 justify-content-between">
-          <label class="form-label col-4" for="">Apellidos</label>
+          <label class="form-label col-4" for=""> Documento</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="text"
+          />
+        </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for=""> Primer Nombre</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="text"
+          />
+        </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for=""> Segundo Nombre</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="text"
+          />
+        </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for=""> Primer Apellido</label>
           <input
             class="border border-dark border-4 form-input-br col-8"
             type="text"
@@ -190,35 +211,36 @@
             type="number"
           />
         </div>
-        <div class="row">
-          <div class="col-6 mb-3">
-            <div class="row justify-content-between">
-              <label class="form-label col-6" for="">Adultos</label>
-              <input
-                class="border border-dark border-4 form-input-br col-6"
-                type="number"
-              />
-            </div>
-          </div>
-          <div class="col-6 mb-3">
-            <div class="row justify-content-between">
-              <label class="form-label col-6" for="">Niños</label>
-              <input
-                class="border border-dark border-4 form-input-br col-6"
-                type="number"
-              />
-            </div>
-          </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for="">Dirección de residencia</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="number"
+          />
         </div>
         <div class="row text-start mb-3 justify-content-between">
-          <label class="form-label col-5" for="">Cotización sobre</label>
+          <label class="form-label col-4" for="">País</label>
           <input
-            class="border border-dark border-4 form-input-br col-7"
-            type="text"
+            class="border border-dark border-4 form-input-br col-8"
+            type="number"
+          />
+        </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for="">Departamento</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="number"
+          />
+        </div>
+        <div class="row text-start mb-3 justify-content-between">
+          <label class="form-label col-4" for="">Ciudad</label>
+          <input
+            class="border border-dark border-4 form-input-br col-8"
+            type="number"
           />
         </div>
         <div class="row mb-3">
-          <label class="form-label col-12" for="">Comentarios</label>
+          <label class="form-label col-12" for="">Solicitud-Queja-Reclamo</label>
           <textarea class="border border-dark border-4 form-input-br col-12">
  Haznos saber lo que piensas sobre nosotros...</textarea
           >

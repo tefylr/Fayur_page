@@ -1,10 +1,11 @@
 @import url("https://fonts.cdnfonts.com/css/arima-madurai");
+@import url("https://fonts.cdnfonts.com/css/bahiana");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  outline: var(--raya);
+  /* outline: var(--raya); */
   font-weight: 200;
   font-family: "Arima Madurai", sans-serif;
 }
@@ -98,6 +99,9 @@ header .navegacion {
 }
 .nav-link {
   color: var(--blanco);
+}
+.nav-shadow {
+  filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.7));
 }
 
 .r-texto {
@@ -230,9 +234,10 @@ header .marco .marco_interno .cuadro a {
 .button-width-content {
   width: fit-content;
   color: #fff;
-  background-color: #000000;
+  background-color: var(--salmon);
   font-size: 32px;
-  padding: 4px 12px;
+  padding: 4px 22px;
+  border: none;
 }
 
 section {
@@ -259,6 +264,9 @@ form h2 {
   font-weight: bold;
   text-align: center;
   padding: 5% 0%;
+}
+.h1-bahiana {
+  font-family: "Bahiana", sans-serif;
 }
 /*---------------------------------------------footer--------------------------------------------*/
 
@@ -300,6 +308,9 @@ footer a {
 
 .p-col-4 {
   font-size: 35px;
+}
+.width-plan{
+  width: 30%;
 }
 
 /*-------------------------------page-pasadias---------------------------------------*/
@@ -351,6 +362,7 @@ footer a {
 #historia {
   background-color: var(--verde);
   padding: 0% 10%;
+  color: var(--blanco);
 }
 .equipo {
   /* background-image: url("../img/equipo.jpeg");
@@ -382,9 +394,11 @@ footer a {
   width: 90%;
 }
 
+
+
 /**-------------------------------page contacto---------------------------------------*/
 .bckgnd-form-contacto {
-  background-image: url("../img/img_slider_2.jpeg");
+  background-image: url("../img/img_slider_.png");
   background-size: cover;
   background-repeat: no-repeat;
   padding: 7% 0;
@@ -493,15 +507,57 @@ footer a {
 @media (min-width: 320px) and (max-width: 480px) {
   /* CSS */
   .icono-footer {
-    height: 27px;
+    height: 22px;
     margin: 4%;
   }
-  footer p{
+  footer p {
     padding-right: 0%;
     font-size: 0.6rem;
   }
-  footer h3{
+  footer h3 {
     font-size: 0.8rem;
+  }
+  footer .row {
+    padding-left: 8%;
+  }
 
+  .row-margin-bottom {
+    margin-bottom: 25%;
+  }
+  #section_1 button {
+    font-size: 0.8rem;
+  }
+  #section_pagos h1 {
+    font-size: 1rem;
+  }
+  .inv-heigth {
+    height: 100px;
+  }
+
+  .res-heigth {
+    height: 200px;
+    margin: -8% 0%;
+  }
+  .row-margin-bottom {
+    margin-bottom: 8%;
+  }
+  #pasadias_form h1 {
+    margin-bottom: 0%;
+  }
+  .p-padding {
+    padding: 5% 0%;
+  }
+  .img-pad-res {
+    margin: 5% 0%;
+  }
+  .row-width-title {
+    font-size: 2rem;
+  }
+  .p-pqrs {
+    font-size: 1rem;
+  }
+
+  .bckgnd-form-contacto {
+    background-position: right;
   }
 }
